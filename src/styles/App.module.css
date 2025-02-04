@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  background: linear-gradient(to bottom, #001c32, #003831);
+  padding: 20px;
+  font-family: sans-serif;
+  color: #e0eafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+.developerName {
+  font-size: 0.5rem;
+}
+.developerName i {
+  color: red;
+}

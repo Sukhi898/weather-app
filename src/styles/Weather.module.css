@@ -1,0 +1,187 @@
+.weatherCard {
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #8d8d2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 70vh;
+}
+.weatherCard h3 {
+  color: #c0c049;
+}
+.Btntitle {
+  display: flex;
+  width: 100vh;
+  justify-content: space-between;
+}
+
+.Btntitle h2 {
+  margin-left: 44vh;
+}
+
+.Btntitle i {
+  position: relative;
+}
+
+.weatherCard h2 {
+  font-size: 2rem;
+}
+
+.forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 17px;
+  font-size: 0.7rem;
+  gap: 20px;
+}
+
+.forecastCard {
+  padding: 10px;
+  width: 150px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.report {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  margin-top: 44px;
+  align-items: center;
+}
+
+.report p {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .Btntitle {
+    display: flex;
+    width: 50vh;
+    justify-content: space-between;
+  }
+
+  .forecastCard {
+    width: 100%;
+    max-width: 130px;
+    margin-bottom: 8px;
+    font-size: 0.6rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .weatherCard {
+    padding: 15px;
+    min-height: 60vh;
+  }
+
+  .Btntitle i {
+    position: relative;
+  }
+
+  .weatherCard h2 {
+    font-size: 1.5rem;
+    margin-left: 74px;
+  }
+
+  .forecastContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 0.6rem;
+    justify-items: center;
+    overflow: hidden;
+  }
+
+  .forecastCard img {
+    width: 44px;
+    height: 42px;
+    margin-top: -7px;
+  }
+
+  .report {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .report p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .weatherCard {
+    padding: 18px;
+    min-height: 65vh;
+  }
+
+  .weatherCard h2 {
+    font-size: 1.8rem;
+  }
+
+  .forecastContainer {
+    font-size: 0.75rem;
+    gap: 15px;
+  }
+
+  .forecastCard {
+    padding: 12px;
+    width: 123px;
+    padding: 12px;
+  }
+
+  .report {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report p {
+    font-size: 0.65rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .weatherCard {
+    padding: 20px;
+    min-height: 70vh;
+  }
+
+  .weatherCard h2 {
+    font-size: 2rem;
+  }
+
+  .forecastContainer {
+    font-size: 0.7rem;
+    gap: 20px;
+  }
+
+  .forecastCard {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .report {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+  }
+
+  .report p {
+    font-size: 0.7rem;
+  }
+}
